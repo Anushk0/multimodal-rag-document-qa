@@ -1,0 +1,152 @@
+[
+  {
+    "id": "leave-days",
+    "question": "How many vacation days does a full-time employee get each year?",
+    "expected_source": "handbook.pdf",
+    "expected_keywords": ["18", "leave"],
+    "reference_answer": "Full-time employees accrue 18 days of annual paid leave per year, credited in a lump sum at the start of each calendar year."
+  },
+  {
+    "id": "leave-carryover",
+    "question": "How many unused leave days can be carried over to next year?",
+    "expected_source": "handbook.pdf",
+    "expected_keywords": ["5 days", "carried over"],
+    "reference_answer": "Up to 5 days of unused leave may be carried over into the next calendar year; any balance above that is forfeited unless local law requires otherwise."
+  },
+  {
+    "id": "remote-days",
+    "question": "How many days per week are employees allowed to work from home?",
+    "expected_source": "handbook.pdf",
+    "expected_keywords": ["3 days", "remote"],
+    "reference_answer": "Employees may work remotely up to 3 days per week, subject to manager approval and role suitability."
+  },
+  {
+    "id": "expense-threshold",
+    "question": "Above what expense amount is a receipt required?",
+    "expected_source": "handbook.pdf",
+    "expected_keywords": ["$50", "receipt"],
+    "reference_answer": "Any expense over $50 requires an itemized receipt submitted through the expense portal within 30 days of purchase."
+  },
+  {
+    "id": "vpn-requirement",
+    "question": "Is a VPN required to access internal systems from outside the office?",
+    "expected_source": "handbook.pdf",
+    "expected_keywords": ["VPN", "mandatory"],
+    "reference_answer": "Yes, VPN access is mandatory for any connection to internal systems from outside the office network."
+  },
+  {
+    "id": "api-rate-limit",
+    "question": "What is the default rate limit for the Aurora API Gateway?",
+    "expected_source": "product_spec.pdf",
+    "expected_keywords": ["1000", "requests per minute"],
+    "reference_answer": "The gateway enforces a default rate limit of 1000 requests per minute per API key."
+  },
+  {
+    "id": "api-auth",
+    "question": "What authentication methods does Aurora support for service-to-service calls?",
+    "expected_source": "product_spec.pdf",
+    "expected_keywords": ["OAuth2", "API keys"],
+    "reference_answer": "Aurora supports OAuth2 client-credentials flow and static API keys for service-to-service calls."
+  },
+  {
+    "id": "api-regions",
+    "question": "Which regions is the Aurora API Gateway deployed in?",
+    "expected_source": "product_spec.pdf",
+    "expected_keywords": ["US-East", "EU-West"],
+    "reference_answer": "Aurora is currently deployed in two regions: US-East and EU-West."
+  },
+  {
+    "id": "api-pricing-pro",
+    "question": "How much does the Pro pricing tier cost per month?",
+    "expected_source": "product_spec.pdf",
+    "expected_keywords": ["$99", "Pro"],
+    "reference_answer": "The Pro tier costs $99 per month and includes 1,000,000 requests, both regions, and a 99.9 percent uptime SLA."
+  },
+  {
+    "id": "api-free-quota",
+    "question": "How many free requests per month are included in the Free tier?",
+    "expected_source": "product_spec.pdf",
+    "expected_keywords": ["10,000", "Free"],
+    "reference_answer": "The Free tier includes 10,000 requests per month at no cost, with access to US-East only and no SLA guarantee."
+  },
+  {
+    "id": "battery-cycles",
+    "question": "How many charge-discharge cycles were used in the battery test?",
+    "expected_source": "research_note.pdf",
+    "expected_keywords": ["500", "cycles"],
+    "reference_answer": "Cells were cycled through 500 full charge-discharge cycles."
+  },
+  {
+    "id": "battery-temperature",
+    "question": "At what temperature was the battery degradation test conducted?",
+    "expected_source": "research_note.pdf",
+    "expected_keywords": ["25 degrees", "temperature"],
+    "reference_answer": "The cells were cycled at a controlled ambient temperature of 25 degrees Celsius."
+  },
+  {
+    "id": "battery-eol-threshold",
+    "question": "At what capacity retention percentage is a battery cell considered end-of-life?",
+    "expected_source": "research_note.pdf",
+    "expected_keywords": ["80 percent", "retention"],
+    "reference_answer": "A cell was classified as end-of-life once its capacity fell below an 80 percent retention threshold relative to its rated capacity."
+  },
+  {
+    "id": "battery-new-formulation-result",
+    "question": "What capacity did the new electrolyte formulation retain after the test cycles?",
+    "expected_source": "research_note.pdf",
+    "expected_keywords": ["87 percent"],
+    "reference_answer": "The new electrolyte formulation retained an average of 87 percent capacity after 500 cycles."
+  },
+  {
+    "id": "battery-baseline-result",
+    "question": "What capacity did the baseline formulation retain under the same test conditions?",
+    "expected_source": "research_note.pdf",
+    "expected_keywords": ["74 percent", "baseline"],
+    "reference_answer": "The baseline formulation retained an average of 74 percent capacity after 500 cycles under identical test conditions."
+  },
+  {
+    "id": "hard-current-reimbursement-threshold",
+    "question": "What is the current expense reimbursement receipt threshold?",
+    "expected_source": "handbook.pdf",
+    "expected_keywords": ["$50"],
+    "difficulty": "hard",
+    "note": "Distractor chunk mentions a historical $75 threshold; the question asks for the current one.",
+    "reference_answer": "The current expense reimbursement receipt threshold is $50 (the prior threshold of $75 was superseded by the 2022 policy revision)."
+  },
+  {
+    "id": "hard-current-rate-limit",
+    "question": "What is the current default rate limit for the API gateway?",
+    "expected_source": "product_spec.pdf",
+    "expected_keywords": ["1000"],
+    "difficulty": "hard",
+    "note": "Distractor chunk mentions a legacy 200 req/min beta limit; the question asks for the current one.",
+    "reference_answer": "The current default rate limit is 1000 requests per minute per API key (the 2021 beta release used 200 requests per minute, which no longer applies)."
+  },
+  {
+    "id": "hard-http-status-code",
+    "question": "HTTP status code rate limit exceeded",
+    "expected_source": "product_spec.pdf",
+    "expected_keywords": ["429"],
+    "difficulty": "hard",
+    "note": "Short keyword-style query rather than a full natural-language question.",
+    "reference_answer": "Requests exceeding the configured rate limit receive an HTTP 429 response with a Retry-After header."
+  },
+  {
+    "id": "hard-jwt-signing-algorithm",
+    "question": "JWT signing algorithm",
+    "expected_source": "product_spec.pdf",
+    "expected_keywords": ["RS256"],
+    "difficulty": "hard",
+    "note": "Short keyword-style query targeting a specific technical token.",
+    "reference_answer": "JWT bearer tokens are signed with RS256, with a maximum token lifetime of 1 hour before re-issuance is required."
+  },
+  {
+    "id": "hard-webhook-retries",
+    "question": "webhook delivery retry attempts",
+    "expected_source": "product_spec.pdf",
+    "expected_keywords": ["5 times", "retried"],
+    "difficulty": "hard",
+    "note": "Short keyword-style query.",
+    "reference_answer": "Webhook delivery is retried up to 5 times with exponential backoff before being marked as failed."
+  }
+]

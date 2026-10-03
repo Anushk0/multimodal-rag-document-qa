@@ -1,0 +1,13 @@
+{
+  "mode": "simple",
+  "n_questions": 1,
+  "question_ids": [
+    "leave-days"
+  ],
+  "mean_scores": {
+    "faithfulness": 0.6666666666666666,
+    "answer_relevancy": 0.7445864408859599,
+    "llm_context_precision_without_reference": NaN,
+    "context_recall": 1.0
+  }
+}

@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+.env
+.streamlit/secrets.toml
+
+chroma_db/
+uploaded_docs/
+eval/eval_chroma_db/
+
+*.egg-info/
+.DS_Store

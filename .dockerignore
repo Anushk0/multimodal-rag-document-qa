@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+.env
+.git/
+.github/
+
+chroma_db/
+uploaded_docs/
+eval/eval_chroma_db/
+
+*.egg-info/
+.DS_Store

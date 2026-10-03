@@ -1,0 +1,18 @@
+[
+  {
+    "strategy": "naive_semantic_only",
+    "recall@1": 0.95,
+    "recall@3": 1,
+    "mrr": 0.975,
+    "avg_latency_ms": 9.5,
+    "n_questions": 20
+  },
+  {
+    "strategy": "hybrid_bm25_mmr_rerank",
+    "recall@1": 1,
+    "recall@3": 1,
+    "mrr": 1.0,
+    "avg_latency_ms": 172.0,
+    "n_questions": 20
+  }
+]
